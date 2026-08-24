@@ -23,11 +23,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lorofy - Focus & Grow",
-  description: "Stay focused, track your daily tasks, and grow your virtual garden with Lorofy.",
+  metadataBase: new URL("https://lorofy.space"),
+  title: {
+    default: "Lorofy — Focus & Grow",
+    template: "%s | Lorofy",
+  },
+  description:
+    "Lorofy turns your deep-work sessions into a living botanical garden. Stay focused, track habits, and grow rare flora with every timer you complete.",
+  keywords: [
+    "focus app",
+    "productivity",
+    "pomodoro",
+    "plant growing",
+    "habit tracker",
+    "deep work",
+    "botanical garden",
+    "study timer",
+  ],
+  authors: [{ name: "Lorofy Team", url: "https://lorofy.space" }],
+  creator: "Lorofy",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
+  openGraph: {
+    title: "Lorofy — Focus & Grow",
+    description:
+      "Lorofy turns your deep-work sessions into a living botanical garden. Stay focused, track habits, and grow rare flora.",
+    url: "https://lorofy.space",
+    siteName: "Lorofy",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lorofy — Focus & Grow",
+    description:
+      "Lorofy turns your deep-work sessions into a living botanical garden. Stay focused and grow rare flora.",
+    creator: "@lorofyapp",
+  },
   icons: {
-    icon: "/lorofy.png",
-    apple: "/lorofy.png",
+    icon: "/icon.png",
+    apple: "/icon.png",
   },
 };
 

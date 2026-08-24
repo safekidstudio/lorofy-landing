@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lorofy.space"),
+  metadataBase: new URL("https://app.lorofy.space"),
   title: {
     default: "Lorofy — Focus & Grow",
     template: "%s | Lorofy",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "botanical garden",
     "study timer",
   ],
-  authors: [{ name: "Lorofy Team", url: "https://lorofy.space" }],
+  authors: [{ name: "Lorofy Team", url: "https://app.lorofy.space" }],
   creator: "Lorofy",
   robots: {
     index: true,
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Lorofy — Focus & Grow",
     description:
       "Lorofy turns your deep-work sessions into a living botanical garden. Stay focused, track habits, and grow rare flora.",
-    url: "https://lorofy.space",
+    url: "https://app.lorofy.space",
     siteName: "Lorofy",
     locale: "en_US",
     type: "website",

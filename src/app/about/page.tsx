@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "About — Lorofy",
     description:
       "Meet the team behind Lorofy. Born from frustration with distraction-first apps, we built a productivity tool that makes focus feel like tending a garden.",
-    url: "https://lorofy.space/about",
+    url: "https://app.lorofy.space/about",
     siteName: "Lorofy",
     type: "website",
   },

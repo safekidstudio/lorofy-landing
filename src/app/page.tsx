@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Lorofy — Focus & Grow",
     description:
       "Lorofy turns your deep-work sessions into a living botanical garden. Stay focused, track habits, and grow rare flora with every timer you complete.",
-    url: "https://lorofy.space",
+    url: "https://app.lorofy.space",
     siteName: "Lorofy",
     type: "website",
   },

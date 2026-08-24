@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Pricing — Lorofy",
     description:
       "Start free and upgrade when you need more greenhouse space. Compare the Free Plan and Forest Pro — simple, transparent pricing with no hidden fees.",
-    url: "https://lorofy.space/pricing",
+    url: "https://app.lorofy.space/pricing",
     siteName: "Lorofy",
     type: "website",
   },

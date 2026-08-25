@@ -4,6 +4,7 @@ import "./globals.css";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { cn } from "@/lib/utils";
+import thumbnail from "@/assets/images/thumbnail.png";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -55,6 +56,14 @@ export const metadata: Metadata = {
     siteName: "Lorofy",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: thumbnail.src,
+        width: thumbnail.width,
+        height: thumbnail.height,
+        alt: "Lorofy — Focus & Grow",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
@@ -62,10 +71,10 @@ export const metadata: Metadata = {
     description:
       "Lorofy turns your deep-work sessions into a living botanical garden. Stay focused and grow rare flora.",
     creator: "@lorofyapp",
+    images: [thumbnail.src],
   },
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: "/favicon.ico",
   },
 };
 

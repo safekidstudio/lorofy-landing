@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { cn } from "@/lib/utils";
 
 interface BoundedProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -12,13 +12,8 @@ export function Bounded({
   ...props
 }: BoundedProps) {
   return (
-    <Component
-      className={cn("w-full py-20", className)}
-      {...props}
-    >
-      <div className="container">
-        {children}
-      </div>
+    <Component className={cn("w-full py-20", className)} {...props}>
+      <div className="container">{children}</div>
     </Component>
   );
 }

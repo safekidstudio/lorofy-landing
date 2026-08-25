@@ -16,8 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy — Lorofy",
-    description:
-      "Lorofy is built privacy-first. Read our full privacy policy.",
+    description: "Lorofy is built privacy-first. Read our full privacy policy.",
   },
 };
 

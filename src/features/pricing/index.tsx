@@ -1,7 +1,7 @@
 "use client";
 
-import { PricingCards } from "./components/pricing-cards";
 import { FeatureComparison } from "./components/feature-comparison";
+import { PricingCards } from "./components/pricing-cards";
 import { TeamsBanner } from "./components/teams-banner";
 
 export function PricingFeature() {

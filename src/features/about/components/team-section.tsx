@@ -1,13 +1,12 @@
 import Image from "next/image";
-import { Bounded } from "@/components/shared/bounded";
-import { Heading } from "@/components/shared/heading";
-import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
-
 // Avatar imports
 import Avatar02 from "@/assets/images/avatars/02.png";
 import Avatar09 from "@/assets/images/avatars/09.png";
 import Avatar22 from "@/assets/images/avatars/22.png";
+import { ScrollAnimatedContainer } from "@/components/animated";
+import { Bounded } from "@/components/shared/bounded";
+import { Heading } from "@/components/shared/heading";
+import { Paragraph } from "@/components/shared/paragraph";
 
 const TEAM_MEMBERS = [
   {
@@ -35,7 +34,10 @@ export function TeamSection() {
     <Bounded className="bg-background py-20">
       <div className="flex flex-col items-center gap-12">
         <ScrollAnimatedContainer type="fade" delay={0.1}>
-          <Heading variant="section" className="text-center font-semibold select-none">
+          <Heading
+            variant="section"
+            className="text-center font-semibold select-none"
+          >
             The Botanical Team
           </Heading>
         </ScrollAnimatedContainer>
@@ -59,14 +61,24 @@ export function TeamSection() {
                   />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <Heading variant="card" as="h3" className="text-base font-semibold">
+                  <Heading
+                    variant="card"
+                    as="h3"
+                    className="text-base font-semibold"
+                  >
                     {member.name}
                   </Heading>
-                  <Paragraph variant="card" className="text-xs text-primary font-medium">
+                  <Paragraph
+                    variant="card"
+                    className="text-xs text-primary font-medium"
+                  >
                     {member.role}
                   </Paragraph>
                 </div>
-                <Paragraph variant="card" className="text-sm text-foreground/65 leading-relaxed">
+                <Paragraph
+                  variant="card"
+                  className="text-sm text-foreground/65 leading-relaxed"
+                >
                   {member.bio}
                 </Paragraph>
               </div>

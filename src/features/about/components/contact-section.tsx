@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Heading } from "@/components/shared/heading";
 import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
 import { cn } from "@/lib/utils";
 
 export function ContactSection() {
@@ -20,23 +20,40 @@ export function ContactSection() {
     <Bounded className="bg-background py-20 border-t border-border/40">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-start mx-auto">
         {/* Left: Text */}
-        <ScrollAnimatedContainer type="slide" direction="left" delay={0.1} className="flex flex-col gap-5 text-left">
-          <Heading variant="section" as="h2" className="text-3xl md:text-4xl font-semibold">
+        <ScrollAnimatedContainer
+          type="slide"
+          direction="left"
+          delay={0.1}
+          className="flex flex-col gap-5 text-left"
+        >
+          <Heading
+            variant="section"
+            as="h2"
+            className="text-3xl md:text-4xl font-semibold"
+          >
             Get in touch with us
           </Heading>
           <Paragraph className="text-foreground/70 leading-relaxed">
-            Have a suggestion for a new botanical asset, a custom edition team focus, or looking to make Lorofy available in more studios? Drop us a question about our greenhouse Package or about focus.
+            Have a suggestion for a new botanical asset, a custom edition team
+            focus, or looking to make Lorofy available in more studios? Drop us
+            a question about our greenhouse Package or about focus.
           </Paragraph>
           <div className="flex flex-col gap-2 text-sm text-foreground/80">
             <p>
               General inquiries{" "}
-              <a href="mailto:hello@lorofyapp.com" className="text-primary font-medium hover:underline">
+              <a
+                href="mailto:hello@lorofyapp.com"
+                className="text-primary font-medium hover:underline"
+              >
                 hello@lorofyapp.com
               </a>
             </p>
             <p>
               Press{" "}
-              <a href="mailto:press@lorofyapp.com" className="text-primary font-medium hover:underline">
+              <a
+                href="mailto:press@lorofyapp.com"
+                className="text-primary font-medium hover:underline"
+              >
                 press@lorofyapp.com
               </a>
             </p>
@@ -46,7 +63,11 @@ export function ContactSection() {
         {/* Right: Form */}
         <ScrollAnimatedContainer type="slide" direction="right" delay={0.2}>
           <div className="flex flex-col gap-5 p-8 bg-card border border-border/70 rounded-3xl shadow-2xs">
-            <Heading variant="card" as="h3" className="text-base font-semibold select-none">
+            <Heading
+              variant="card"
+              as="h3"
+              className="text-base font-semibold select-none"
+            >
               Send a message
             </Heading>
 
@@ -66,12 +87,14 @@ export function ContactSection() {
                     required
                     placeholder="Your email"
                     value={form.email}
-                    onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
+                    onChange={(e) =>
+                      setForm((f) => ({ ...f, email: e.target.value }))
+                    }
                     className={cn(
                       "w-full px-4 py-3 text-sm bg-background border border-border/70 rounded-xl",
                       "placeholder:text-foreground/40",
                       "focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/60",
-                      "transition-all"
+                      "transition-all",
                     )}
                   />
                 </div>
@@ -82,12 +105,14 @@ export function ContactSection() {
                     placeholder="Message"
                     rows={5}
                     value={form.message}
-                    onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
+                    onChange={(e) =>
+                      setForm((f) => ({ ...f, message: e.target.value }))
+                    }
                     className={cn(
                       "w-full px-4 py-3 text-sm bg-background border border-border/70 rounded-xl resize-none",
                       "placeholder:text-foreground/40",
                       "focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary/60",
-                      "transition-all"
+                      "transition-all",
                     )}
                   />
                 </div>

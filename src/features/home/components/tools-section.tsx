@@ -1,20 +1,25 @@
-import { Timer, Sprout, Volume2, ShieldAlert } from "lucide-react";
+import { ShieldAlert, Sprout, Timer, Volume2 } from "lucide-react";
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Heading } from "@/components/shared/heading";
 import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
 
 export function ToolsSection() {
   return (
     <Bounded className="bg-background border-t border-border/20" id="guide">
       <div className="flex flex-col items-center gap-12">
         {/* Section Header */}
-        <ScrollAnimatedContainer type="fade" delay={0.1} className="flex flex-col items-center text-center gap-3">
+        <ScrollAnimatedContainer
+          type="fade"
+          delay={0.1}
+          className="flex flex-col items-center text-center gap-3"
+        >
           <Heading variant="section">
             Gamified tools for absolute clarity
           </Heading>
           <Paragraph variant="section">
-            Ditch distracting screens and replace empty scrolls with lush organic feedback loops.
+            Ditch distracting screens and replace empty scrolls with lush
+            organic feedback loops.
           </Paragraph>
         </ScrollAnimatedContainer>
 
@@ -27,9 +32,12 @@ export function ToolsSection() {
                 <Timer className="size-6" />
               </div>
               <div className="flex flex-col gap-0.5">
-                <Heading variant="card" as="h3">Focus Timer</Heading>
+                <Heading variant="card" as="h3">
+                  Focus Timer
+                </Heading>
                 <Paragraph variant="card">
-                  A customisable Pomodoro timer designed to lock in your concentration without distraction.
+                  A customisable Pomodoro timer designed to lock in your
+                  concentration without distraction.
                 </Paragraph>
               </div>
             </div>
@@ -42,9 +50,12 @@ export function ToolsSection() {
                 <Sprout className="size-6" />
               </div>
               <div className="flex flex-col gap-0.5">
-                <Heading variant="card" as="h3">Plant Growing</Heading>
+                <Heading variant="card" as="h3">
+                  Plant Growing
+                </Heading>
                 <Paragraph variant="card">
-                  As you focus, watch a random digital seedling evolve into a unique botanical asset.
+                  As you focus, watch a random digital seedling evolve into a
+                  unique botanical asset.
                 </Paragraph>
               </div>
             </div>
@@ -57,9 +68,12 @@ export function ToolsSection() {
                 <Volume2 className="size-6" />
               </div>
               <div className="flex flex-col gap-0.5">
-                <Heading variant="card" as="h3">Sound Picker</Heading>
+                <Heading variant="card" as="h3">
+                  Sound Picker
+                </Heading>
                 <Paragraph variant="card">
-                  Ambient sounds including soft rain, forest winds, and white noise to create your focus sanctuary.
+                  Ambient sounds including soft rain, forest winds, and white
+                  noise to create your focus sanctuary.
                 </Paragraph>
               </div>
             </div>
@@ -72,9 +86,12 @@ export function ToolsSection() {
                 <ShieldAlert className="size-6" />
               </div>
               <div className="flex flex-col gap-0.5">
-                <Heading variant="card" as="h3">App Blocker</Heading>
+                <Heading variant="card" as="h3">
+                  App Blocker
+                </Heading>
                 <Paragraph variant="card">
-                  Smart hard-block mode that restricts distracting social applications during focus blocks.
+                  Smart hard-block mode that restricts distracting social
+                  applications during focus blocks.
                 </Paragraph>
               </div>
             </div>

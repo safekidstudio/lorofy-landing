@@ -1,6 +1,6 @@
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Heading } from "@/components/shared/heading";
-import { ScrollAnimatedContainer } from "@/components/animated";
 
 const COMPARISON_ROWS = [
   {
@@ -40,7 +40,10 @@ export function FeatureComparison() {
     <Bounded className="bg-background py-16">
       <div className="flex flex-col items-center gap-10 w-full max-w-5xl mx-auto">
         <ScrollAnimatedContainer type="fade" delay={0.1}>
-          <Heading variant="section" className="text-center font-semibold select-none">
+          <Heading
+            variant="section"
+            className="text-center font-semibold select-none"
+          >
             Compare Features
           </Heading>
         </ScrollAnimatedContainer>
@@ -50,17 +53,32 @@ export function FeatureComparison() {
             <table className="w-full border-collapse text-left text-sm md:text-base">
               <thead>
                 <tr className="border-b border-border/70 bg-[#F8F9FA] select-none">
-                  <th className="p-5 font-semibold text-foreground/80">Feature</th>
-                  <th className="p-5 font-semibold text-foreground/80 text-center w-1/4">Free</th>
-                  <th className="p-5 font-semibold text-foreground/80 text-center w-1/4">Forest Pro</th>
+                  <th className="p-5 font-semibold text-foreground/80">
+                    Feature
+                  </th>
+                  <th className="p-5 font-semibold text-foreground/80 text-center w-1/4">
+                    Free
+                  </th>
+                  <th className="p-5 font-semibold text-foreground/80 text-center w-1/4">
+                    Forest Pro
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {COMPARISON_ROWS.map((row) => (
-                  <tr key={row.feature} className="border-b border-border/50 last:border-0 hover:bg-[#FAF9F6]/30 transition-colors">
-                    <td className="p-5 font-medium text-foreground">{row.feature}</td>
-                    <td className="p-5 text-secondary text-center select-none">{row.free}</td>
-                    <td className="p-5 font-semibold text-foreground text-center select-none">{row.pro}</td>
+                  <tr
+                    key={row.feature}
+                    className="border-b border-border/50 last:border-0 hover:bg-[#FAF9F6]/30 transition-colors"
+                  >
+                    <td className="p-5 font-medium text-foreground">
+                      {row.feature}
+                    </td>
+                    <td className="p-5 text-secondary text-center select-none">
+                      {row.free}
+                    </td>
+                    <td className="p-5 font-semibold text-foreground text-center select-none">
+                      {row.pro}
+                    </td>
                   </tr>
                 ))}
               </tbody>

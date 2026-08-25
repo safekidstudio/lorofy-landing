@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Fredoka, Nerko_One, Geist_Mono } from "next/font/google";
+import { Fredoka, Geist_Mono, Nerko_One } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { cn } from "@/lib/utils";
 
 const fredoka = Fredoka({
   subsets: ["latin"],
@@ -84,7 +84,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
-        <main className="flex-1 flex flex-col w-full">{children}</main>
+        <main className="flex-1 flex flex-col w-full overflow-x-hidden">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

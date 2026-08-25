@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import { Check } from "lucide-react";
+import { useState } from "react";
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Heading } from "@/components/shared/heading";
 import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
 import { cn } from "@/lib/utils";
 
 const FREE_FEATURES = [
@@ -28,8 +28,16 @@ export function PricingCards() {
     <Bounded className="bg-background py-16">
       <div className="flex flex-col items-center gap-12 w-full">
         {/* Header Block */}
-        <ScrollAnimatedContainer type="fade" delay={0.1} className="flex flex-col items-center text-center gap-3">
-          <Heading variant="hero" as="h1" className="text-4xl sm:text-5xl md:text-6xl font-semibold select-none">
+        <ScrollAnimatedContainer
+          type="fade"
+          delay={0.1}
+          className="flex flex-col items-center text-center gap-3"
+        >
+          <Heading
+            variant="hero"
+            as="h1"
+            className="text-4xl sm:text-5xl md:text-6xl font-semibold select-none"
+          >
             Simple, transparent pricing
           </Heading>
           <Paragraph variant="section" className="text-secondary select-none">
@@ -47,7 +55,7 @@ export function PricingCards() {
                 "px-5 py-2 text-xs md:text-sm font-semibold rounded-full transition-all duration-300",
                 !isYearly
                   ? "bg-white text-foreground shadow-2xs"
-                  : "text-foreground/50 hover:text-foreground"
+                  : "text-foreground/50 hover:text-foreground",
               )}
             >
               Monthly
@@ -59,7 +67,7 @@ export function PricingCards() {
                 "flex items-center gap-1.5 px-5 py-2 text-xs md:text-sm font-semibold rounded-full transition-all duration-300",
                 isYearly
                   ? "bg-white text-foreground shadow-2xs"
-                  : "text-foreground/50 hover:text-foreground"
+                  : "text-foreground/50 hover:text-foreground",
               )}
             >
               Yearly
@@ -76,7 +84,11 @@ export function PricingCards() {
           <ScrollAnimatedContainer type="slide" direction="up" delay={0.1}>
             <div className="flex flex-col p-8 bg-card border border-border/70 rounded-3xl h-full shadow-2xs hover:shadow-xs transition-shadow">
               <div className="flex flex-col gap-2">
-                <Heading variant="card" as="h3" className="text-xl md:text-2xl font-semibold">
+                <Heading
+                  variant="card"
+                  as="h3"
+                  className="text-xl md:text-2xl font-semibold"
+                >
                   Free Plan
                 </Heading>
                 <Paragraph variant="card" className="text-sm text-secondary">
@@ -86,7 +98,9 @@ export function PricingCards() {
 
               {/* Price block */}
               <div className="flex items-baseline gap-1 mt-6 select-none">
-                <span className="text-4xl md:text-5xl font-semibold text-foreground">$0</span>
+                <span className="text-4xl md:text-5xl font-semibold text-foreground">
+                  $0
+                </span>
                 <span className="text-sm text-secondary">/ forever</span>
               </div>
 
@@ -96,7 +110,10 @@ export function PricingCards() {
               {/* Features checkmarks */}
               <ul className="flex flex-col gap-4">
                 {FREE_FEATURES.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
+                  <li
+                    key={feature}
+                    className="flex items-center gap-3 text-sm md:text-base text-foreground/80"
+                  >
                     <Check className="size-4 text-primary shrink-0" />
                     <span>{feature}</span>
                   </li>
@@ -114,7 +131,11 @@ export function PricingCards() {
               </span>
 
               <div className="flex flex-col gap-2">
-                <Heading variant="card" as="h3" className="text-xl md:text-2xl font-semibold">
+                <Heading
+                  variant="card"
+                  as="h3"
+                  className="text-xl md:text-2xl font-semibold"
+                >
                   Forest Pro
                 </Heading>
                 <Paragraph variant="card" className="text-sm text-secondary">
@@ -136,7 +157,10 @@ export function PricingCards() {
               {/* Features checkmarks */}
               <ul className="flex flex-col gap-4">
                 {PRO_FEATURES.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm md:text-base text-foreground/80">
+                  <li
+                    key={feature}
+                    className="flex items-center gap-3 text-sm md:text-base text-foreground/80"
+                  >
                     <Check className="size-4 text-primary shrink-0" />
                     <span>{feature}</span>
                   </li>
@@ -147,17 +171,26 @@ export function PricingCards() {
         </div>
 
         {/* Guarantee Banner */}
-        <ScrollAnimatedContainer type="zoom" delay={0.1} className="w-full max-w-5xl mt-6">
+        <ScrollAnimatedContainer
+          type="zoom"
+          delay={0.1}
+          className="w-full max-w-5xl mt-6"
+        >
           <div className="flex items-center gap-4 p-5 bg-secondary/20 border border-border/20 rounded-2xl">
             <div className="p-2.5 rounded-full bg-white text-primary shrink-0">
               <Check className="size-5" />
             </div>
             <div className="flex flex-col gap-0.5 text-left">
-              <Heading variant="card" as="h4" className="text-base font-semibold">
+              <Heading
+                variant="card"
+                as="h4"
+                className="text-base font-semibold"
+              >
                 7-Day Trial + 30-Day Money-Back Guarantee
               </Heading>
               <Paragraph variant="card" className="text-sm text-foreground/70">
-                No questions asked. Cancel at any point during your premium trial and you won't be charged.
+                No questions asked. Cancel at any point during your premium
+                trial and you won't be charged.
               </Paragraph>
             </div>
           </div>

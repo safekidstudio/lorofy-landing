@@ -6,7 +6,9 @@ interface LogoProps {
 
 export function Logo({ className }: LogoProps) {
   return (
-    <div className={`flex items-center gap-1 fill-current ${className || "text-foreground"}`}>
+    <div
+      className={`flex items-center gap-1 fill-current ${className || "text-foreground"}`}
+    >
       <svg
         width="79"
         height="27"

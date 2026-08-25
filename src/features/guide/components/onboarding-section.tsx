@@ -1,23 +1,26 @@
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Heading } from "@/components/shared/heading";
 import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
 
 const ONBOARDING_STEPS = [
   {
     id: "01",
     title: "Choose focus & plant type",
-    description: "Choose your duration, companion type, and select your botanical asset to grow.",
+    description:
+      "Choose your duration, companion type, and select your botanical asset to grow.",
   },
   {
     id: "02",
     title: "Get ready to focus",
-    description: "Tap grow, put your phone face down, and let your companion work.",
+    description:
+      "Tap grow, put your phone face down, and let your companion work.",
   },
   {
     id: "03",
     title: "Harvest and grow",
-    description: "Completing your timer unlocks rare flora assets. Leaving early will cause seedlings to wither.",
+    description:
+      "Completing your timer unlocks rare flora assets. Leaving early will cause seedlings to wither.",
   },
 ];
 
@@ -44,10 +47,17 @@ export function OnboardingSection() {
                   {step.id}
                 </div>
                 <div className="flex flex-col gap-0.5">
-                  <Heading variant="card" as="h3" className="text-base md:text-lg font-semibold">
+                  <Heading
+                    variant="card"
+                    as="h3"
+                    className="text-base md:text-lg font-semibold"
+                  >
                     {step.title}
                   </Heading>
-                  <Paragraph variant="card" className="text-sm md:text-base text-secondary">
+                  <Paragraph
+                    variant="card"
+                    className="text-sm md:text-base text-secondary"
+                  >
                     {step.description}
                   </Paragraph>
                 </div>

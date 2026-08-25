@@ -1,7 +1,7 @@
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Heading } from "@/components/shared/heading";
 import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
 
 const CORE_VALUES = [
   {
@@ -35,7 +35,10 @@ export function ValuesSection() {
     <Bounded className="bg-background py-20">
       <div className="flex flex-col items-center gap-12">
         <ScrollAnimatedContainer type="fade" delay={0.1}>
-          <Heading variant="section" className="text-center font-semibold select-none">
+          <Heading
+            variant="section"
+            className="text-center font-semibold select-none"
+          >
             Our core botanical values
           </Heading>
         </ScrollAnimatedContainer>
@@ -50,10 +53,17 @@ export function ValuesSection() {
             >
               <div className="flex flex-col gap-3 p-6 bg-card border border-border/70 rounded-2xl h-full shadow-2xs hover:shadow-xs transition-shadow">
                 <span className="text-2xl select-none">{value.emoji}</span>
-                <Heading variant="card" as="h3" className="text-base font-semibold">
+                <Heading
+                  variant="card"
+                  as="h3"
+                  className="text-base font-semibold"
+                >
                   {value.title}
                 </Heading>
-                <Paragraph variant="card" className="text-sm text-foreground/70 leading-relaxed">
+                <Paragraph
+                  variant="card"
+                  className="text-sm text-foreground/70 leading-relaxed"
+                >
                   {value.description}
                 </Paragraph>
               </div>

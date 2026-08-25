@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 import { cn } from "@/lib/utils";
 
 interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
@@ -15,7 +15,8 @@ export function Heading({
 }: HeadingProps) {
   const styles = {
     hero: "text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight text-foreground font-sans",
-    section: "text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-foreground font-sans",
+    section:
+      "text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-foreground font-sans",
     card: "text-lg md:text-xl font-semibold text-foreground font-sans",
   };
 

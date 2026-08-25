@@ -1,9 +1,9 @@
 import Image from "next/image";
 import MewIllustration from "@/assets/illustrations/mew.svg";
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Heading } from "@/components/shared/heading";
 import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
 
 export function OriginSection() {
   return (
@@ -16,14 +16,24 @@ export function OriginSection() {
           delay={0.1}
           className="md:col-span-7 flex flex-col gap-5 text-left"
         >
-          <Heading variant="section" as="h2" className="text-3xl md:text-4xl font-semibold">
+          <Heading
+            variant="section"
+            as="h2"
+            className="text-3xl md:text-4xl font-semibold"
+          >
             Born from frustration
           </Heading>
           <Paragraph className="text-foreground/75 leading-relaxed">
-            We built Lorofy because most focus apps promised a lot but delivered distraction halls. They ranked down sessions, enabled doomscrolling among progress, and tracked us all because omnipresent engagement meant more followers.
+            We built Lorofy because most focus apps promised a lot but delivered
+            distraction halls. They ranked down sessions, enabled doomscrolling
+            among progress, and tracked us all because omnipresent engagement
+            meant more followers.
           </Paragraph>
           <Paragraph className="text-foreground/75 leading-relaxed">
-            We aimed at something simpler. Lorofy transforms focus and idle time more into a rewarding growing process. By pairing productivity through attention-intentional growth feedback, we help creatives and teams build healthier habits without pressure.
+            We aimed at something simpler. Lorofy transforms focus and idle time
+            more into a rewarding growing process. By pairing productivity
+            through attention-intentional growth feedback, we help creatives and
+            teams build healthier habits without pressure.
           </Paragraph>
         </ScrollAnimatedContainer>
 

@@ -1,10 +1,13 @@
+import { ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Paragraph } from "@/components/shared/paragraph";
-import { ScrollAnimatedContainer } from "@/components/animated";
 
 export function StatsSection() {
   return (
-    <Bounded className="bg-brand-dark text-white border-y border-emerald-950" id="pricing">
+    <Bounded
+      className="bg-brand-dark text-white border-y border-emerald-950"
+      id="pricing"
+    >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center text-center">
         {/* Stat 1 */}
         <ScrollAnimatedContainer type="fade" delay={0.1}>

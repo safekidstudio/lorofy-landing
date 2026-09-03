@@ -12,7 +12,7 @@ export function Bounded({
   ...props
 }: BoundedProps) {
   return (
-    <Component className={cn("w-full py-20", className)} {...props}>
+    <Component className={cn("w-full py-12 md:py-16 lg:py-20", className)} {...props}>
       <div className="container">{children}</div>
     </Component>
   );

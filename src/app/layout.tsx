@@ -93,7 +93,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Header />
-        <main className="flex-1 flex flex-col w-full overflow-x-hidden">
+        <main className="flex-1 flex flex-col w-full overflow-x-clip">
           {children}
         </main>
         <Footer />

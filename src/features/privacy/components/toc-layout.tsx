@@ -66,42 +66,44 @@ export function TocLayout() {
 
   return (
     <Bounded className="bg-background py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-12 divide-x divide-accent/50 gap-12 lg:gap-16 w-full items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 divide-x divide-accent/50 gap-12 lg:gap-16 w-full">
         {/* Left Side: Table of Contents */}
-        <aside className="lg:col-span-3 sticky top-28 hidden lg:flex flex-col gap-6 select-none">
-          <span className="text-xs md:text-sm font-semibold tracking-wider text-foreground/40 uppercase pl-5">
-            Table of Contents
-          </span>
-          <div className="relative flex flex-col gap-4 border-l border-border/70 pl-5 text-left">
-            {SECTIONS.map((section) => {
-              const isActive = activeId === section.id;
-              return (
-                <button
-                  key={section.id}
-                  type="button"
-                  onClick={() => handleScrollTo(section.id)}
-                  className={cn(
-                    "text-xs md:text-sm font-medium transition-all text-left relative py-0.5",
-                    isActive
-                      ? "text-primary font-semibold translate-x-1"
-                      : "text-foreground/50 hover:text-foreground hover:translate-x-0.5",
-                  )}
-                >
-                  {isActive && (
-                    <motion.div
-                      layoutId="toc-active-line"
-                      className="absolute left-[-23px] top-0 bottom-0 w-0.5 rounded-full bg-primary"
-                      transition={{
-                        type: "spring",
-                        stiffness: 300,
-                        damping: 30,
-                      }}
-                    />
-                  )}
-                  <span>{section.label}</span>
-                </button>
-              );
-            })}
+        <aside className="lg:col-span-3 hidden lg:block select-none">
+          <div className="sticky top-28 flex flex-col gap-6">
+            <span className="text-xs md:text-sm font-semibold tracking-wider text-foreground/40 uppercase pl-5">
+              Table of Contents
+            </span>
+            <div className="relative flex flex-col gap-4 border-l border-border/70 pl-5 text-left">
+              {SECTIONS.map((section) => {
+                const isActive = activeId === section.id;
+                return (
+                  <button
+                    key={section.id}
+                    type="button"
+                    onClick={() => handleScrollTo(section.id)}
+                    className={cn(
+                      "text-xs md:text-sm font-medium transition-all text-left relative py-0.5",
+                      isActive
+                        ? "text-primary font-semibold translate-x-1"
+                        : "text-foreground/50 hover:text-foreground hover:translate-x-0.5",
+                    )}
+                  >
+                    {isActive && (
+                      <motion.div
+                        layoutId="toc-active-line"
+                        className="absolute left-[-23px] top-0 bottom-0 w-0.5 rounded-full bg-primary"
+                        transition={{
+                          type: "spring",
+                          stiffness: 300,
+                          damping: 30,
+                        }}
+                      />
+                    )}
+                    <span>{section.label}</span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </aside>
 

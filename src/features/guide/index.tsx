@@ -12,7 +12,7 @@ import { TipsSection } from "./components/tips-section";
 
 export function GuideFeature() {
   return (
-    <div className="flex flex-col w-full bg-background overflow-x-clip">
+    <div className="flex flex-col w-full bg-background">
       {/* 1. Page Header */}
       <Bounded className="bg-background py-20">
         <ScrollAnimatedContainer

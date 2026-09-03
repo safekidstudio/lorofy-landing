@@ -6,7 +6,7 @@ import { TeamsBanner } from "./components/teams-banner";
 
 export function PricingFeature() {
   return (
-    <div className="flex flex-col w-full bg-background overflow-x-clip">
+    <div className="flex flex-col w-full bg-background">
       <PricingCards />
       <FeatureComparison />
       <TeamsBanner />

@@ -8,7 +8,7 @@ import { Paragraph } from "@/components/shared/paragraph";
 export function HeroSection() {
   return (
     <Bounded className="bg-background" id="hero">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-20 items-center overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-20 items-center">
         {/* Text Content */}
         <div className="md:col-span-7">
           <ScrollAnimatedContainer

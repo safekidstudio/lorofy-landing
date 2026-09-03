@@ -124,25 +124,25 @@
   --sidebar-ring: oklch(0.64 0.005 240);
 }
 
-.container {
+@utility container {
   width: 100%;
   max-width: 1400px;
   margin-inline: auto;
   padding-inline: 1rem;
 
-  @media (min-width: 640px) {
+  @variant sm {
     padding-inline: 1.5rem;
   }
 
-  @media (min-width: 768px) {
+  @variant md {
     padding-inline: 2rem;
   }
 
-  @media (min-width: 1024px) {
+  @variant lg {
     padding-inline: 2.5rem;
   }
 
-  @media (min-width: 1280px) {
+  @variant xl {
     padding-inline: 3rem;
   }
 }

@@ -85,15 +85,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={cn(
         "h-full",
         "antialiased",
+        "overflow-x-clip",
         fredoka.variable,
         nerkoOne.variable,
         geistMono.variable,
         "font-sans",
       )}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col overflow-x-clip">
         <Header />
-        <main className="flex-1 flex flex-col w-full overflow-x-clip">
+        <main className="flex-1 flex flex-col w-full">
           {children}
         </main>
         <Footer />

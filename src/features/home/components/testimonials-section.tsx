@@ -19,7 +19,12 @@ export function TestimonialsSection() {
         {/* Testimonial Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-2">
           {/* Card 1 */}
-          <ScrollAnimatedContainer type="zoom" delay={0.1} className="h-full">
+          <ScrollAnimatedContainer
+            type="slide"
+            direction="up"
+            delay={0.1}
+            className="h-full"
+          >
             <div className="flex flex-col justify-between p-7 rounded-2xl bg-card border border-border/40 shadow-xs hover:shadow-sm transition-shadow gap-6 h-full">
               <Paragraph className="italic text-foreground/80">
                 "Lorofy completely gamified my study hours. I actually look
@@ -46,7 +51,12 @@ export function TestimonialsSection() {
           </ScrollAnimatedContainer>
 
           {/* Card 2 */}
-          <ScrollAnimatedContainer type="zoom" delay={0.2} className="h-full">
+          <ScrollAnimatedContainer
+            type="slide"
+            direction="up"
+            delay={0.2}
+            className="h-full"
+          >
             <div className="flex flex-col justify-between p-7 rounded-2xl bg-card border border-border/40 shadow-xs hover:shadow-sm transition-shadow gap-6 h-full">
               <Paragraph className="italic text-foreground/80">
                 "The hard block sound picker keeps my ADHD brain perfectly
@@ -73,7 +83,12 @@ export function TestimonialsSection() {
           </ScrollAnimatedContainer>
 
           {/* Card 3 */}
-          <ScrollAnimatedContainer type="zoom" delay={0.3} className="h-full">
+          <ScrollAnimatedContainer
+            type="slide"
+            direction="up"
+            delay={0.3}
+            className="h-full"
+          >
             <div className="flex flex-col justify-between p-7 rounded-2xl bg-card border border-border/40 shadow-xs hover:shadow-sm transition-shadow gap-6 h-full">
               <Paragraph className="italic text-foreground/80">
                 "A beautifully clean productivity app. Highly recommended for

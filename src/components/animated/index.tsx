@@ -119,3 +119,5 @@ export const ScrollAnimatedContainer = ({
     </motion.div>
   );
 };
+
+export { NumberFlowStat } from "./number-flow-stat";

@@ -1,4 +1,4 @@
-import { ScrollAnimatedContainer } from "@/components/animated";
+import { NumberFlowStat, ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Paragraph } from "@/components/shared/paragraph";
 
@@ -10,10 +10,10 @@ export function StatsSection() {
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 items-center text-center">
         {/* Stat 1 */}
-        <ScrollAnimatedContainer type="fade" delay={0.1}>
+        <ScrollAnimatedContainer type="slide" direction="up" delay={0.1}>
           <div className="flex flex-col gap-1">
             <span className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white font-heading select-none">
-              50K+
+              <NumberFlowStat value="50K+" />
             </span>
             <Paragraph className="text-primary-foreground/50 select-none">
               Active focusers
@@ -22,10 +22,10 @@ export function StatsSection() {
         </ScrollAnimatedContainer>
 
         {/* Stat 2 */}
-        <ScrollAnimatedContainer type="fade" delay={0.2}>
+        <ScrollAnimatedContainer type="slide" direction="up" delay={0.2}>
           <div className="flex flex-col gap-1 border-y md:border-y-0 md:border-x border-emerald-800/20 py-8 md:py-0">
             <span className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white font-heading select-none">
-              2M+
+              <NumberFlowStat value="2M+" />
             </span>
             <Paragraph className="text-primary-foreground/50 select-none">
               Focus hours saved
@@ -34,10 +34,10 @@ export function StatsSection() {
         </ScrollAnimatedContainer>
 
         {/* Stat 3 */}
-        <ScrollAnimatedContainer type="fade" delay={0.3}>
+        <ScrollAnimatedContainer type="slide" direction="up" delay={0.3}>
           <div className="flex flex-col gap-1">
             <span className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white font-heading select-none">
-              100K+
+              <NumberFlowStat value="100K+" />
             </span>
             <Paragraph className="text-primary-foreground/50 select-none">
               Plants grown successfully

@@ -5,7 +5,8 @@ export function QuoteSection() {
   return (
     <Bounded className="bg-[#FAF9F6] border-y border-border/40 py-20">
       <ScrollAnimatedContainer
-        type="zoom"
+        type="slide"
+        direction="up"
         delay={0.1}
         className="max-w-5xl mx-auto text-center"
       >

@@ -6,7 +6,7 @@ import { Paragraph } from "@/components/shared/paragraph";
 export function TeamsBanner() {
   return (
     <Bounded className="bg-background py-16">
-      <ScrollAnimatedContainer type="zoom" delay={0.1}>
+      <ScrollAnimatedContainer type="slide" direction="up" delay={0.1}>
         <div className="flex flex-col items-start gap-4 p-8 md:p-12 bg-brand-dark border border-emerald-950 rounded-3xl shadow-xs max-w-5xl mx-auto w-full text-left">
           <Heading
             variant="section"

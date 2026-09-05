@@ -1,4 +1,4 @@
-import { ScrollAnimatedContainer } from "@/components/animated";
+import { NumberFlowStat, ScrollAnimatedContainer } from "@/components/animated";
 import { Bounded } from "@/components/shared/bounded";
 import { Paragraph } from "@/components/shared/paragraph";
 
@@ -16,12 +16,13 @@ export function AboutStatsSection() {
         {ABOUT_STATS.map((stat, index) => (
           <ScrollAnimatedContainer
             key={stat.label}
-            type="fade"
+            type="slide"
+            direction="up"
             delay={0.1 * (index + 1)}
           >
             <div className="flex flex-col gap-1">
               <span className="text-4xl sm:text-5xl font-bold tracking-tight text-white font-heading select-none">
-                {stat.value}
+                <NumberFlowStat value={stat.value} />
               </span>
               <Paragraph className="text-white/50 select-none text-sm">
                 {stat.label}

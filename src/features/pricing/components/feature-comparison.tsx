@@ -48,7 +48,12 @@ export function FeatureComparison() {
           </Heading>
         </ScrollAnimatedContainer>
 
-        <ScrollAnimatedContainer type="zoom" delay={0.2} className="w-full">
+        <ScrollAnimatedContainer
+          type="slide"
+          direction="up"
+          delay={0.2}
+          className="w-full"
+        >
           <div className="w-full overflow-x-auto border border-border/70 rounded-2xl bg-card shadow-2xs">
             <table className="w-full border-collapse text-left text-sm md:text-base">
               <thead>

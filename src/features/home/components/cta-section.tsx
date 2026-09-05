@@ -9,7 +9,8 @@ export function CtaSection() {
       id="download"
     >
       <ScrollAnimatedContainer
-        type="zoom"
+        type="slide"
+        direction="up"
         delay={0.1}
         className="w-full flex flex-col items-center"
       >

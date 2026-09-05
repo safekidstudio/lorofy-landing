@@ -110,7 +110,7 @@ export function TocLayout() {
         {/* Right Side: Content Blocks */}
         <div className="lg:col-span-9 flex flex-col gap-16 text-left">
           {/* Privacy-First Guarantee */}
-          <ScrollAnimatedContainer type="zoom" delay={0.1}>
+          <ScrollAnimatedContainer type="slide" direction="up" delay={0.1}>
             <div className="flex flex-col gap-2.5 p-7 md:p-8 bg-secondary/20 border border-border/70 rounded-3xl">
               <Heading
                 variant="card"
@@ -332,7 +332,7 @@ export function TocLayout() {
           </ScrollAnimatedContainer>
 
           {/* Section 6: Contact Banner */}
-          <ScrollAnimatedContainer type="zoom" delay={0.1}>
+          <ScrollAnimatedContainer type="slide" direction="up" delay={0.1}>
             <section
               id="contact"
               className="flex flex-col gap-4 p-8 md:p-10 bg-[#FAF9F6] border border-border/70 rounded-3xl scroll-mt-28"

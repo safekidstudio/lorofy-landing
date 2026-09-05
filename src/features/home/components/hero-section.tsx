@@ -44,7 +44,7 @@ export function HeroSection() {
             delay={0.2}
             className="w-full"
           >
-            <div className="relative w-full max-w-md md:max-w-none transition-transform duration-500 hover:scale-[1.02]">
+            <div className="relative w-full max-w-md md:max-w-none">
               <Image
                 src={HeroImage}
                 alt="Lorofy mobile application mockup showing companion selector, focus tracking, and timer"

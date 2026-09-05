@@ -9,7 +9,7 @@ import { Paragraph } from "@/components/shared/paragraph";
 export function SaplingSection() {
   return (
     <Bounded className="bg-background py-16">
-      <ScrollAnimatedContainer type="zoom" delay={0.1}>
+      <ScrollAnimatedContainer type="slide" direction="up" delay={0.1}>
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-20 p-8 md:p-10  mx-auto w-full">
           {/* Left Illustration */}
           <div className="shrink-0 flex justify-center items-center">

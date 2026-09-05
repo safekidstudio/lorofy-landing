@@ -172,7 +172,8 @@ export function PricingCards() {
 
         {/* Guarantee Banner */}
         <ScrollAnimatedContainer
-          type="zoom"
+          type="slide"
+          direction="up"
           delay={0.1}
           className="w-full max-w-5xl mt-6"
         >

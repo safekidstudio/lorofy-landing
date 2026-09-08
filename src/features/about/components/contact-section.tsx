@@ -40,21 +40,12 @@ export function ContactSection() {
           </Paragraph>
           <div className="flex flex-col gap-2 text-sm text-foreground/80">
             <p>
-              General inquiries{" "}
+              Email:{" "}
               <a
-                href="mailto:hello@lorofyapp.com"
+                href="mailto:developer.kibal@gmail.com"
                 className="text-primary font-medium hover:underline"
               >
-                hello@lorofyapp.com
-              </a>
-            </p>
-            <p>
-              Press{" "}
-              <a
-                href="mailto:press@lorofyapp.com"
-                className="text-primary font-medium hover:underline"
-              >
-                press@lorofyapp.com
+                developer.kibal@gmail.com
               </a>
             </p>
           </div>

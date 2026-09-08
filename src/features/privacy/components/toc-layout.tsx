@@ -349,10 +349,10 @@ export function TocLayout() {
                 within 24 hours. Get in touch at:
               </Paragraph>
               <a
-                href="mailto:privacy@lorofyapp.com"
+                href="mailto:developer.kibal@gmail.com"
                 className="text-sm md:text-base font-semibold text-primary hover:underline self-start transition-all"
               >
-                privacy@lorofyapp.com
+                developer.kibal@gmail.com
               </a>
             </section>
           </ScrollAnimatedContainer>

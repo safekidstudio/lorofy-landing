@@ -48,7 +48,7 @@ export function CtaSection() {
 
             {/* Google Play Button */}
             <a
-              href="https://play.google.com"
+              href="https://play.google.com/store/apps/details?id=com.lorofy.app"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-black text-white hover:bg-black/90 active:scale-95 transition-all px-6 py-3 rounded-full shadow-md w-52 sm:w-auto"
